@@ -1,0 +1,38 @@
+body{
+  width: 600px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+#chat{
+  height: 300px;
+  border: 3px solid rgb(93, 166, 95);
+  overflow: auto;
+  margin-top: 13px;
+}
+
+button, input{
+  padding: 5px 7px;
+  border-radius: 4px;
+}
+
+input{
+  border: 3px solid rgb(93, 166, 95);
+  outline: none;
+}
+
+button{
+  background-color: rgb(93, 166, 95);
+  cursor: pointer;
+  border:  3px solid rgb(93, 166, 95);
+}
+
+#chat div{
+  border: 3px solid rgb(144, 195, 146);
+  margin: 10px 10px;
+  width: 50%;
+  width: fit-content;
+  padding: 5px 3px;
+  border-radius: 10px;
+}

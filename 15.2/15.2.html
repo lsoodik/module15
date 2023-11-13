@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="./15.2.css">
+</head>
+<body>
+  <button class="btn">Получить размеры экрана</button>
+  <script>
+    function getScreenSize() {
+    let screenWidth = document.documentElement.clientWidth;
+    let screenHeight = Math.max(
+      document.body.scrollHeight, document.documentElement.scrollHeight,
+      document.body.offsetHeight, document.documentElement.offsetHeight,
+      document.body.clientHeight, document.documentElement.clientHeight
+    );
+      return {width: screenWidth, height: screenHeight};
+    }
+    function handleClick() {
+      let screenSize = getScreenSize();
+      alert("Размеры экрана: " + screenSize.width + " x " + screenSize.height);
+    }
+    const btn = document.querySelector('.btn');
+    btn.addEventListener('click', handleClick);
+  </script>
+</body>
+</html>
